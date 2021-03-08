@@ -16,4 +16,9 @@ pprint(morpheus)
 # j_morpheus = json.loads(morpheus)
 # j_morpheus_str = json.dumps(j_morpheus, indent=4)
 # print(j_morpheus_str)
-print(json.dumps(morpheus, ensure_ascii=False, indent=4))
+j_morpheus = json.dumps(morpheus, ensure_ascii=False, indent=4))
+
+print(j_morpheus.keys())
+
+# for api in j_morpheus:
+#     print(api)
