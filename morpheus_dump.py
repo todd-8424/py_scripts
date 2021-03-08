@@ -2,7 +2,7 @@ import os
 import sys
 import json
 from pprint import pprint
-morpheus=""
+
 print(sys.executable)
 
 print("OS Env:")
