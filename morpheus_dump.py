@@ -3,8 +3,6 @@ import sys
 import json
 from pprint import pprint
 
-morpheus = 
-
 print(sys.executable)
 print("OS Env:")
 # j_env = json.loads(os.environ)
