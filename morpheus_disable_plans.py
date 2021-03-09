@@ -1,3 +1,11 @@
+"""
+Author: Todd A. Kearney
+Support: none
+Date: 9 March 2021
+Description: Get list of plans and disable them using the cloud type. 
+Requirements: This script is designed to be used with Morphues as a Python task in an operational workflow. 
+"""
+
 import requests
 import json
 import logging
