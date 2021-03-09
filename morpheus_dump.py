@@ -3,22 +3,24 @@ import sys
 import json
 from pprint import pprint
 
+print("-----------")
+print("Executable:")
+print("-----------")
 print(sys.executable)
+print("-----------")
 print("OS Env:")
-# j_env = json.loads(os.environ)
-# j_env_str = json.dumps(j_env, indent=4)
-pprint(os.environ)
+print("-----------")
+print(json.dumps(dict(os.environ), indent=4))
+print("-----------")
 print("sys.argv:")
+print("-----------")
 pprint(sys.argv)
-print("morpheus:")
-pprint(morpheus)
+print("-----------")
+print("Morpheus:")
+print("-----------")
+j_morpheus=json.dumps(morpheus)
+j_morpheus_data=json.loads(j_morpheus)
+print(json.dumps(j_morpheus_data, indent=4))
 
-# j_morpheus = json.loads(morpheus)
-# j_morpheus_str = json.dumps(j_morpheus, indent=4)
-# print(j_morpheus_str)
-j_morpheus = json.dumps(morpheus, ensure_ascii=False, indent=4))
-
-print(j_morpheus.keys())
-
-# for api in j_morpheus:
-#     print(api)
+print("example access key")
+print("Current User: "+j_morpheus_data['morpheus']['username'])
