@@ -1,3 +1,11 @@
+"""
+Author: Todd A. Kearney
+Support: none
+Date: 9 March 2021
+Description: Dump the python environment and the variables passed to the Python task 
+Requirements: This script is designed to be used with Morphues as a Python task in an operational workflow or just a single task. 
+"""
+
 import os
 import sys
 import json

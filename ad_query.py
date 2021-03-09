@@ -1,5 +1,11 @@
 
-#!/Users/tkearney/Development/py-3.9/bin/python
+"""
+Author: Todd A. Kearney
+Support: none
+Date: 9 March 2021
+Description: Used to search AD server for users 
+Requirements: This will search the AD server of choice all required variable are asked for or just set them in the script. 
+"""
 
 from ldap3 import Server, Connection, ALL, NTLM
 import sys
